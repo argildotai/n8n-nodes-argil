@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "lib": ["es2020"],
+        "types": ["node"],
+        "module": "commonjs",
+        "target": "es2020",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "outDir": "./dist",
+        "rootDir": "."
+    },
+    "include": ["nodes/**/*.ts", "credentials/**/*.ts"],
+    "exclude": ["node_modules", "dist"]
+}
