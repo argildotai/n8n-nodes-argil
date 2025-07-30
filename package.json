@@ -13,7 +13,7 @@
         "type": "git",
         "url": "https://github.com/argildotai/n8n-nodes-argil.git"
     },
-    "main": "dist/index.js",
+    "main": "dist/nodes/Argil/Argil.node.js",
     "scripts": {
         "build": "tsc",
         "dev": "tsc --watch",
