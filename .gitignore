@@ -35,3 +35,6 @@ Thumbs.db
 
 # Optional: Ignore compiled examples (if any build step creates them)
 examples/**/*.js
+
+# Test environment
+n8n-test-env/
