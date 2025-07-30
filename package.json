@@ -2,14 +2,7 @@
     "name": "n8n-nodes-argil",
     "version": "0.1.0",
     "description": "Community n8n node for creating engaging videos with Argil AI",
-    "keywords": [
-        "n8n",
-        "n8n-community-node-package",
-        "argil",
-        "ai",
-        "video",
-        "video-generation"
-    ],
+    "keywords": ["n8n", "n8n-community-node-package", "argil", "ai", "video", "video-generation"],
     "author": {
         "name": "Argil",
         "email": "support@argil.ai"
@@ -29,24 +22,20 @@
         "lintfix": "eslint --fix \"nodes/**/*.ts\" \"credentials/**/*.ts\"",
         "prepare": "npm run build"
     },
-    "files": [
-        "dist"
-    ],
+    "files": ["dist"],
     "n8n": {
         "n8nNodesApiVersion": 1,
-        "credentials": [
-            "dist/credentials/ArgilApi.credentials.js"
-        ],
-        "nodes": [
-            "dist/nodes/Argil/Argil.node.js"
-        ]
+        "credentials": ["dist/credentials/ArgilApi.credentials.js"],
+        "nodes": ["dist/nodes/Argil/Argil.node.js"]
+    },
+    "dependencies": {
+        "n8n-workflow": "^1.54.0"
     },
     "devDependencies": {
         "@types/node": "^20.8.9",
         "@typescript-eslint/parser": "^6.8.0",
         "eslint": "^8.51.0",
         "eslint-plugin-n8n-nodes-base": "^1.16.1",
-        "n8n-workflow": "^1.54.0",
         "prettier": "^3.0.3",
         "typescript": "^5.2.2"
     },
