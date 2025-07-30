@@ -1,32 +1,33 @@
 {
     "name": "n8n-nodes-argil",
-    "version": "0.1.5",
-    "description": "n8n node for creating engaging videos with Argil AI",
+    "version": "0.1.0",
+    "description": "Community n8n node for creating engaging videos with Argil AI",
     "keywords": [
+        "n8n",
         "n8n-community-node-package",
         "argil",
-        "video",
         "ai",
+        "video",
         "video-generation"
     ],
-    "license": "MIT",
-    "homepage": "https://github.com/your-username/n8n-nodes-argil",
     "author": {
-        "name": "Argil Community",
+        "name": "Argil",
         "email": "support@argil.ai"
     },
+    "license": "MIT",
+    "homepage": "https://github.com/argildotai/n8n-nodes-argil",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/your-username/n8n-nodes-argil.git"
+        "url": "https://github.com/argildotai/n8n-nodes-argil.git"
     },
-    "main": "index.js",
+    "main": "dist/index.js",
     "scripts": {
-        "build": "tsc && cp package.json dist/ && cp -r icons dist/ && cp icons/argil.svg dist/ && cp icons/argil.svg dist/nodes/Argil/",
+        "build": "tsc",
         "dev": "tsc --watch",
-        "format": "prettier nodes credentials --write",
-        "lint": "eslint nodes credentials --ext .ts",
-        "lintfix": "eslint nodes credentials --ext .ts --fix",
-        "prepublishOnly": "npm run build && npm run lint"
+        "format": "prettier --write \"nodes/**/*.ts\" \"credentials/**/*.ts\"",
+        "lint": "eslint \"nodes/**/*.ts\" \"credentials/**/*.ts\"",
+        "lintfix": "eslint --fix \"nodes/**/*.ts\" \"credentials/**/*.ts\"",
+        "prepare": "npm run build"
     },
     "files": [
         "dist"
