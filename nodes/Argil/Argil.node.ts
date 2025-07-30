@@ -47,6 +47,10 @@ function convertToApiLayout(
 }
 
 export class Argil implements INodeType {
+    constructor() {
+        console.log('[Argil Node] Constructor called - Node is being loaded');
+    }
+
     description: INodeTypeDescription = {
         displayName: 'Argil',
         name: 'argil',
