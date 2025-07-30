@@ -11,7 +11,7 @@ import {
 } from 'n8n-workflow';
 
 // API Base URL - Change this to switch between environments
-const API_BASE_URL = 'http://localhost:8181/v1';
+const API_BASE_URL = 'https://api.argil.ai/v1';
 
 // Helper function to convert layout type and position to API layout value
 function convertToApiLayout(
