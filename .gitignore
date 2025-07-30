@@ -31,7 +31,7 @@ Thumbs.db
 *.tsbuildinfo
 
 # Credentials or local config
-credentials/
+# credentials/
 
 # Optional: Ignore compiled examples (if any build step creates them)
 examples/**/*.js
